@@ -10,19 +10,24 @@
 		861044F32718C69100B27893 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861044F22718C69100B27893 /* ContainerViewController.swift */; };
 		861044F62718CA3A00B27893 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861044F52718CA3900B27893 /* SideMenuViewController.swift */; };
 		861F6F1F2724B11F00A5B3DF /* SavedQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861F6F1E2724B11F00A5B3DF /* SavedQuotesViewController.swift */; };
-		861F6F232724B19200A5B3DF /* SavedQuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861F6F212724B19200A5B3DF /* SavedQuotesTableViewCell.swift */; };
-		861F6F242724B19200A5B3DF /* SavedQuotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 861F6F222724B19200A5B3DF /* SavedQuotesTableViewCell.xib */; };
-		861F75D92721F0EA00FED8B9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861F75D82721F0EA00FED8B9 /* PopUpViewController.swift */; };
 		862B148827DEA2B3006D3735 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B148727DEA2B3006D3735 /* NetworkManager.swift */; };
-		86452E2E27EA260A0072019C /* AboutStoicism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86452E2D27EA260A0072019C /* AboutStoicism.swift */; };
-		86668127271AF2CE00044E68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86668126271AF2CE00044E68 /* MainViewController.swift */; };
-		8666812B271B0E3200044E68 /* QuoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666812A271B0E3200044E68 /* QuoteData.swift */; };
+		86452E2E27EA260A0072019C /* AboutStoicismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86452E2D27EA260A0072019C /* AboutStoicismViewController.swift */; };
+		8666812B271B0E3200044E68 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666812A271B0E3200044E68 /* Quote.swift */; };
+		869CDF3428DBACC500C45985 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CDF3328DBACC500C45985 /* CoreDataManager.swift */; };
+		86BC43D828DD634D00EBAF90 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC43D728DD634D00EBAF90 /* UIButton+Extensions.swift */; };
+		86BC43DB28DF66F600EBAF90 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC43DA28DF66F500EBAF90 /* UIView+Extensions.swift */; };
 		86C936B0270F90F10048E068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C936AF270F90F10048E068 /* AppDelegate.swift */; };
 		86C936B2270F90F10048E068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C936B1270F90F10048E068 /* SceneDelegate.swift */; };
 		86C936B7270F90F10048E068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C936B5270F90F10048E068 /* Main.storyboard */; };
 		86C936BA270F90F10048E068 /* StoicQuote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C936B8270F90F10048E068 /* StoicQuote.xcdatamodeld */; };
 		86C936BC270F91000048E068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C936BB270F91000048E068 /* Assets.xcassets */; };
 		86C936BF270F91000048E068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C936BD270F91000048E068 /* LaunchScreen.storyboard */; };
+		86C9C9FA28DB578800AE446E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9C9F928DB578800AE446E /* MainViewController.swift */; };
+		86C9C9FC28DB57CC00AE446E /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9C9FB28DB57CC00AE446E /* FirstLaunchViewController.swift */; };
+		86C9C9FF28DB60FA00AE446E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9C9FE28DB60FA00AE446E /* NetworkConstants.swift */; };
+		86CF2EAD28DCA52700A3F034 /* SavedQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF2EAB28DCA52700A3F034 /* SavedQuoteTableViewCell.swift */; };
+		86CF2EAE28DCA52700A3F034 /* SavedQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CF2EAC28DCA52700A3F034 /* SavedQuoteTableViewCell.xib */; };
+		86CF779E28DCEF090043339B /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CF779D28DCEF090043339B /* ColorConstants.swift */; };
 		F1121E3EAF171A7DAD083744 /* Pods_StoicQuote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E13378E5F36BC6E4971D747 /* Pods_StoicQuote.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,13 +36,12 @@
 		861044F22718C69100B27893 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		861044F52718CA3900B27893 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		861F6F1E2724B11F00A5B3DF /* SavedQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuotesViewController.swift; sourceTree = "<group>"; };
-		861F6F212724B19200A5B3DF /* SavedQuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuotesTableViewCell.swift; sourceTree = "<group>"; };
-		861F6F222724B19200A5B3DF /* SavedQuotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedQuotesTableViewCell.xib; sourceTree = "<group>"; };
-		861F75D82721F0EA00FED8B9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = "StoicQuote/View Controller/PopUpViewController.swift"; sourceTree = SOURCE_ROOT; };
 		862B148727DEA2B3006D3735 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		86452E2D27EA260A0072019C /* AboutStoicism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutStoicism.swift; sourceTree = "<group>"; };
-		86668126271AF2CE00044E68 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "StoicQuote/View Controller/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
-		8666812A271B0E3200044E68 /* QuoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteData.swift; sourceTree = "<group>"; };
+		86452E2D27EA260A0072019C /* AboutStoicismViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutStoicismViewController.swift; sourceTree = "<group>"; };
+		8666812A271B0E3200044E68 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		869CDF3328DBACC500C45985 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		86BC43D728DD634D00EBAF90 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		86BC43DA28DF66F500EBAF90 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		86C936AC270F90F10048E068 /* StoicQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoicQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C936AF270F90F10048E068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86C936B1270F90F10048E068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +50,12 @@
 		86C936BB270F91000048E068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C936BE270F91000048E068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C936C0270F91000048E068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C9C9F928DB578800AE446E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		86C9C9FB28DB57CC00AE446E /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
+		86C9C9FE28DB60FA00AE446E /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		86CF2EAB28DCA52700A3F034 /* SavedQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		86CF2EAC28DCA52700A3F034 /* SavedQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		86CF779D28DCEF090043339B /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		9E13378E5F36BC6E4971D747 /* Pods_StoicQuote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoicQuote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E62E3F5F1EB0568B6EC00F /* Pods-StoicQuote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoicQuote.release.xcconfig"; path = "Target Support Files/Pods-StoicQuote/Pods-StoicQuote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,24 +89,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		861044BC2718929F00B27893 /* View Controller */ = {
+		861044BC2718929F00B27893 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				861F6F212724B19200A5B3DF /* SavedQuotesTableViewCell.swift */,
-				861F75D82721F0EA00FED8B9 /* PopUpViewController.swift */,
-				86668126271AF2CE00044E68 /* MainViewController.swift */,
-				861F6F1E2724B11F00A5B3DF /* SavedQuotesViewController.swift */,
-				861044F52718CA3900B27893 /* SideMenuViewController.swift */,
 				861044F22718C69100B27893 /* ContainerViewController.swift */,
-				86452E2D27EA260A0072019C /* AboutStoicism.swift */,
+				86C9C9F928DB578800AE446E /* MainViewController.swift */,
+				861044F52718CA3900B27893 /* SideMenuViewController.swift */,
+				861F6F1E2724B11F00A5B3DF /* SavedQuotesViewController.swift */,
+				86452E2D27EA260A0072019C /* AboutStoicismViewController.swift */,
+				86C9C9FB28DB57CC00AE446E /* FirstLaunchViewController.swift */,
 			);
-			path = "View Controller";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		861044BE271894F000B27893 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				861F6F222724B19200A5B3DF /* SavedQuotesTableViewCell.xib */,
+				86C936BD270F91000048E068 /* LaunchScreen.storyboard */,
 				86C936B5270F90F10048E068 /* Main.storyboard */,
 			);
 			path = View;
@@ -105,9 +114,35 @@
 		8666812D271B0E3800044E68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8666812A271B0E3200044E68 /* QuoteData.swift */,
+				8666812A271B0E3200044E68 /* Quote.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		869CDF3528DBACCA00C45985 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				869CDF3328DBACC500C45985 /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		86A65FC428DC60A0004C72CB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				86CF2EAB28DCA52700A3F034 /* SavedQuoteTableViewCell.swift */,
+				86CF2EAC28DCA52700A3F034 /* SavedQuoteTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		86BC43D928DD635200EBAF90 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86BC43D728DD634D00EBAF90 /* UIButton+Extensions.swift */,
+				86BC43DA28DF66F500EBAF90 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		86C936A3270F90F10048E068 = {
@@ -133,16 +168,36 @@
 			children = (
 				86C936AF270F90F10048E068 /* AppDelegate.swift */,
 				86C936B1270F90F10048E068 /* SceneDelegate.swift */,
-				862B148727DEA2B3006D3735 /* NetworkManager.swift */,
+				86BC43D928DD635200EBAF90 /* Extensions */,
+				86A65FC428DC60A0004C72CB /* Cells */,
+				869CDF3528DBACCA00C45985 /* Core Data */,
+				86C9CA0028DB610000AE446E /* Constants */,
+				86C9C9FD28DB60D800AE446E /* Network */,
 				8666812D271B0E3800044E68 /* Model */,
 				861044BE271894F000B27893 /* View */,
-				861044BC2718929F00B27893 /* View Controller */,
+				861044BC2718929F00B27893 /* Controller */,
 				86C936BB270F91000048E068 /* Assets.xcassets */,
-				86C936BD270F91000048E068 /* LaunchScreen.storyboard */,
 				86C936C0270F91000048E068 /* Info.plist */,
 				86C936B8270F90F10048E068 /* StoicQuote.xcdatamodeld */,
 			);
 			path = StoicQuote;
+			sourceTree = "<group>";
+		};
+		86C9C9FD28DB60D800AE446E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				862B148727DEA2B3006D3735 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		86C9CA0028DB610000AE446E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				86C9C9FE28DB60FA00AE446E /* NetworkConstants.swift */,
+				86CF779D28DCEF090043339B /* ColorConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,10 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861F6F242724B19200A5B3DF /* SavedQuotesTableViewCell.xib in Resources */,
 				86C936BF270F91000048E068 /* LaunchScreen.storyboard in Resources */,
 				86C936BC270F91000048E068 /* Assets.xcassets in Resources */,
 				86C936B7270F90F10048E068 /* Main.storyboard in Resources */,
+				86CF2EAE28DCA52700A3F034 /* SavedQuoteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,18 +315,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CF2EAD28DCA52700A3F034 /* SavedQuoteTableViewCell.swift in Sources */,
+				86C9C9FF28DB60FA00AE446E /* NetworkConstants.swift in Sources */,
 				862B148827DEA2B3006D3735 /* NetworkManager.swift in Sources */,
+				86CF779E28DCEF090043339B /* ColorConstants.swift in Sources */,
 				86C936B0270F90F10048E068 /* AppDelegate.swift in Sources */,
 				86C936B2270F90F10048E068 /* SceneDelegate.swift in Sources */,
+				86BC43DB28DF66F600EBAF90 /* UIView+Extensions.swift in Sources */,
+				86BC43D828DD634D00EBAF90 /* UIButton+Extensions.swift in Sources */,
+				86C9C9FA28DB578800AE446E /* MainViewController.swift in Sources */,
 				861044F32718C69100B27893 /* ContainerViewController.swift in Sources */,
 				861F6F1F2724B11F00A5B3DF /* SavedQuotesViewController.swift in Sources */,
-				861F6F232724B19200A5B3DF /* SavedQuotesTableViewCell.swift in Sources */,
-				86668127271AF2CE00044E68 /* MainViewController.swift in Sources */,
+				86C9C9FC28DB57CC00AE446E /* FirstLaunchViewController.swift in Sources */,
 				86C936BA270F90F10048E068 /* StoicQuote.xcdatamodeld in Sources */,
-				8666812B271B0E3200044E68 /* QuoteData.swift in Sources */,
+				8666812B271B0E3200044E68 /* Quote.swift in Sources */,
 				861044F62718CA3A00B27893 /* SideMenuViewController.swift in Sources */,
-				861F75D92721F0EA00FED8B9 /* PopUpViewController.swift in Sources */,
-				86452E2E27EA260A0072019C /* AboutStoicism.swift in Sources */,
+				869CDF3428DBACC500C45985 /* CoreDataManager.swift in Sources */,
+				86452E2E27EA260A0072019C /* AboutStoicismViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,19 +479,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FYS62UHY46;
 				INFOPLIST_FILE = StoicQuote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Stoic Quote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mehmet.ali.kisacik.StoicQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Stoic Quote";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,19 +506,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FYS62UHY46;
 				INFOPLIST_FILE = StoicQuote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Stoic Quote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mehmet.ali.kisacik.StoicQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Stoic Quote";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

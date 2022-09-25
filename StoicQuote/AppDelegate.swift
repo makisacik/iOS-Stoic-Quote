@@ -8,20 +8,12 @@
 import UIKit
 import CoreData
 
-let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         NetworkManager.shared.startMonitoring()
 
-        //let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        //print(paths[0])
-        
-
-        // Override point for customization after application launch.
         return true
     }
 

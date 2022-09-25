@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d0l-6P-upx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d0l-6P-upx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rt-wO-IOe" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <connections>
                                     <segue destination="wfg-9A-qLp" kind="embed" id="I7p-Ue-fgD"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-vX-XKA" userLabel="Side Menu View">
-                                <rect key="frame" x="0.0" y="88" width="0.0" height="774"/>
+                                <rect key="frame" x="0.0" y="92" width="0.0" height="770"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="jsG-bX-jVp"/>
                                 </constraints>
@@ -55,9 +55,6 @@
                         <outlet property="mainViewLeading" destination="L6B-Xi-wNt" id="y7s-Cm-mnH"/>
                         <outlet property="sideMenuView" destination="Rgj-vX-XKA" id="HMl-3N-cTI"/>
                         <outlet property="sideMenuWidth" destination="jsG-bX-jVp" id="SKv-Xq-dXY"/>
-                        <segue destination="dAJ-O3-1g4" kind="presentation" identifier="PopUpSegue" id="QUb-Mz-9yg"/>
-                        <segue destination="swt-nR-8MQ" kind="show" identifier="testSegue" id="kb7-8U-6eM"/>
-                        <segue destination="bG0-EY-W0r" kind="show" identifier="WhatIsSegue" id="OJP-Vm-j5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zx6-pf-hX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,39 +66,39 @@
             <objects>
                 <viewController id="wfg-9A-qLp" customClass="MainViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bl-vD-aBP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="770"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="XAq-pv-fm4" userLabel="Quote Label">
-                                <rect key="frame" x="20" y="94" width="374" height="300"/>
+                                <rect key="frame" x="20" y="98" width="374" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="AXJ-da-Aph"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-FA-HZi" userLabel="Author Label">
-                                <rect key="frame" x="20" y="404" width="374" height="62"/>
+                                <rect key="frame" x="20" y="408" width="374" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="iFh-FP-JIK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFV-A0-WBO" userLabel="Copy">
-                                <rect key="frame" x="20" y="500" width="50" height="46"/>
+                                <rect key="frame" x="20" y="504" width="50" height="46"/>
                                 <color key="tintColor" red="0.50980392159999999" green="0.48627450979999998" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="square.and.pencil" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="41" weight="light"/>
                                 </state>
                                 <connections>
-                                    <action selector="copyButton:" destination="wfg-9A-qLp" eventType="touchUpInside" id="BWm-a1-453"/>
+                                    <action selector="copyButtonPressed:" destination="wfg-9A-qLp" eventType="touchUpInside" id="ra0-K8-He5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHh-fJ-gJA" userLabel="Save Button">
-                                <rect key="frame" x="352" y="500" width="42" height="50"/>
+                                <rect key="frame" x="352" y="504" width="42" height="50"/>
                                 <color key="tintColor" red="0.50926488640000001" green="0.48633700610000002" blue="0.46587902310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="bookmark" catalog="system">
                                     <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,7 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="nJX-FA-HZi" id="R8b-Tm-7wW"/>
-                        <outlet property="copyButton" destination="KFV-A0-WBO" id="Ei0-g3-laJ"/>
+                        <outlet property="copyButton" destination="KFV-A0-WBO" id="EXZ-l0-rTx"/>
                         <outlet property="mainView" destination="3bl-vD-aBP" id="oFS-F0-Qba"/>
                         <outlet property="quoteLabel" destination="XAq-pv-fm4" id="QXc-tZ-pyZ"/>
                         <outlet property="saveButton" destination="MHh-fJ-gJA" id="d5Y-pj-yJ1"/>
@@ -139,16 +136,16 @@
             </objects>
             <point key="canvasLocation" x="2608.6956521739135" y="-20.089285714285712"/>
         </scene>
-        <!--Pop Up View Controller-->
+        <!--First Launch View Controller-->
         <scene sceneID="SBP-DM-bYb">
             <objects>
-                <viewController storyboardIdentifier="PopUp" id="dAJ-O3-1g4" customClass="PopUpViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstLaunchViewController" id="dAJ-O3-1g4" customClass="FirstLaunchViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRJ-tr-taE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tw-dV-nx8">
-                                <rect key="frame" x="40" y="194" width="334" height="448"/>
+                                <rect key="frame" x="40" y="198" width="334" height="464"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use the app ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-NL-5ek">
                                         <rect key="frame" x="8" y="15" width="318" height="40"/>
@@ -156,17 +153,17 @@
                                             <constraint firstAttribute="height" constant="40" id="nxE-sw-Vnt"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to display a new quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="IM1-QQ-OA2">
-                                        <rect key="frame" x="8" y="55" width="318" height="347"/>
+                                        <rect key="frame" x="8" y="55" width="318" height="363"/>
                                         <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="19"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vc-yq-PIx">
-                                        <rect key="frame" x="85" y="410" width="164" height="30"/>
+                                        <rect key="frame" x="85" y="426" width="164" height="30"/>
                                         <color key="backgroundColor" red="0.8784313725490196" green="0.84313725490196079" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6V4-SH-yzC"/>
@@ -201,7 +198,6 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EcR-OE-11I"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Tw-dV-nx8" firstAttribute="top" secondItem="EcR-OE-11I" secondAttribute="top" constant="150" id="7BR-IR-9zY"/>
                             <constraint firstItem="EcR-OE-11I" firstAttribute="bottom" secondItem="3Tw-dV-nx8" secondAttribute="bottom" constant="200" id="Y5i-gk-hei"/>
@@ -221,48 +217,45 @@
             </objects>
             <point key="canvasLocation" x="3507" y="-20"/>
         </scene>
-        <!--About Stoicism-->
+        <!--About Stoicism View Controller-->
         <scene sceneID="O43-Ub-Z4e">
             <objects>
-                <viewController id="bG0-EY-W0r" customClass="AboutStoicism" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutStoicismViewController" id="bG0-EY-W0r" customClass="AboutStoicismViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBL-E0-ct1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Stoicism?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="IgY-jl-DBC">
-                                <rect key="frame" x="20" y="108" width="374" height="37"/>
+                                <rect key="frame" x="20" y="68" width="374" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="uLE-4a-epo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="VXx-6E-hGP">
-                                <rect key="frame" x="20" y="170" width="374" height="180"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="VXx-6E-hGP">
+                                <rect key="frame" x="20" y="125" width="374" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="LgT-Tl-Ldk"/>
                                 </constraints>
-                                <string key="text">Stoicism teaches the development of self-control and fortitude as a means of overcoming destructive emotions; the philosophy holds that becoming a clear and unbiased thinker allows one to understand the universal reason.</string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The word &quot;Stoic&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-nM-4ik">
-                                <rect key="frame" x="20" y="380" width="374" height="31"/>
+                                <rect key="frame" x="20" y="335" width="374" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="fEv-Lp-AxE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-cQ-1KT" userLabel="Second Text">
-                                <rect key="frame" x="20" y="431" width="374" height="415"/>
-                                <string key="text">The word refers to someone who is indifferent to pain, pleasure, grief, or joy. The modern usage as a "person who represses feelings or endures patiently" was first cited in 1579 as a noun and in 1596 as an adjective. In contrast to the term "Epicurean", the Stanford Encyclopedia of Philosophy's entry on Stoicism notes, "the sense of the English adjective 'stoical' is not utterly misleading with regard to its philosophical origins.
-</string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="24"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-cQ-1KT" userLabel="Second Text">
+                                <rect key="frame" x="20" y="386" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -270,7 +263,7 @@
                         <color key="backgroundColor" red="0.96769672630000003" green="0.92953503130000004" blue="0.88455325370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IgY-jl-DBC" firstAttribute="leading" secondItem="gQI-8b-w7A" secondAttribute="leading" constant="20" id="8Wo-UP-iiT"/>
-                            <constraint firstItem="VXx-6E-hGP" firstAttribute="top" secondItem="IgY-jl-DBC" secondAttribute="bottom" constant="25" id="Fyt-9j-l3d"/>
+                            <constraint firstItem="VXx-6E-hGP" firstAttribute="top" secondItem="IgY-jl-DBC" secondAttribute="bottom" constant="20" id="Fyt-9j-l3d"/>
                             <constraint firstItem="gQI-8b-w7A" firstAttribute="trailing" secondItem="uYf-nM-4ik" secondAttribute="trailing" constant="20" id="HvM-dq-SLG"/>
                             <constraint firstItem="IgY-jl-DBC" firstAttribute="top" secondItem="gQI-8b-w7A" secondAttribute="top" constant="20" id="J7i-bQ-BGr"/>
                             <constraint firstItem="gQI-8b-w7A" firstAttribute="trailing" secondItem="qT7-cQ-1KT" secondAttribute="trailing" constant="20" id="ONK-U9-C9r"/>
@@ -279,14 +272,15 @@
                             <constraint firstItem="uYf-nM-4ik" firstAttribute="top" secondItem="VXx-6E-hGP" secondAttribute="bottom" constant="30" id="e64-of-Imt"/>
                             <constraint firstItem="uYf-nM-4ik" firstAttribute="leading" secondItem="gQI-8b-w7A" secondAttribute="leading" constant="20" id="fle-Vg-ROD"/>
                             <constraint firstItem="qT7-cQ-1KT" firstAttribute="top" secondItem="uYf-nM-4ik" secondAttribute="bottom" constant="20" id="jUT-rs-Bto"/>
-                            <constraint firstAttribute="bottom" secondItem="qT7-cQ-1KT" secondAttribute="bottom" constant="50" id="p7k-kX-QXY"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qT7-cQ-1KT" secondAttribute="bottom" constant="30" id="p7k-kX-QXY"/>
                             <constraint firstItem="gQI-8b-w7A" firstAttribute="trailing" secondItem="VXx-6E-hGP" secondAttribute="trailing" constant="20" id="qZK-Jc-aMe"/>
                             <constraint firstItem="VXx-6E-hGP" firstAttribute="leading" secondItem="gQI-8b-w7A" secondAttribute="leading" constant="20" id="uBY-jf-MPQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="INb-t4-mJ7"/>
                     <connections>
-                        <outlet property="mainText" destination="VXx-6E-hGP" id="0xU-M9-u34"/>
+                        <outlet property="theWordLabel" destination="qT7-cQ-1KT" id="eT2-ew-kRI"/>
+                        <outlet property="whatIsLabel" destination="VXx-6E-hGP" id="g1I-Qf-E85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ry4-uc-D3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,7 +298,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="krS-Ul-q3N">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4HS-wx-TD3"/>
@@ -321,7 +314,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="menuTable" destination="krS-Ul-q3N" id="A0N-hd-og3"/>
+                        <outlet property="sideMenuTableView" destination="krS-Ul-q3N" id="A0N-hd-og3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceN-kc-Vct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -331,13 +324,13 @@
         <!--Saved Quotes View Controller-->
         <scene sceneID="Gyd-FQ-k35">
             <objects>
-                <viewController id="swt-nR-8MQ" customClass="SavedQuotesViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SavedQuotesViewController" id="swt-nR-8MQ" customClass="SavedQuotesViewController" customModule="StoicQuote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1sA-ZQ-CaZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QYv-hm-Pzo">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -365,7 +358,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0l-6P-upx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JzT-oT-Ldw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.96862745098039216" green="0.92941176470588238" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -381,14 +374,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
