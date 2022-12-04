@@ -8,5 +8,5 @@
 import Foundation
 
 struct NetworkConstants {
-    static let stoicWisdomApiHostString = "stoic-server.herokuapp.com"
+    static let stoicWisdomApiHostString = "stoicquotesapi.com"
 }

@@ -47,7 +47,7 @@ class MainViewController: UIViewController {
             NetworkManager.shared.getRandomQuote { [self] results in
                 switch results {
                 case .success(let result):
-                    let quote = result[0]
+                    let quote = result
                     currentQuote = quote
                     updateLabels()
 
