@@ -41,10 +41,10 @@ final class NetworkManager {
         })
     }
 
-    func getRandomQuote(completion: @escaping (Result<[Quote],AFError>) -> Void) {
-        components.path = "/random"
+    func getRandomQuote(completion: @escaping (Result<Quote,AFError>) -> Void) {
+        components.path = "/v1/api/quotes/random"
         if let urlString = components.string {
-            AF.request(urlString, method: .get).responseDecodable(of: [Quote].self) { response in
+            AF.request(urlString, method: .get).responseDecodable(of: Quote.self) { response in
                 completion(response.result)
             }
         }
